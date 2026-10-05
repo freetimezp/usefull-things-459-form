@@ -1,40 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#fff7e8" />
+        <meta
+            name="description"
+            content="Cartoon Lab — a playful creative project form."
+        />
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+        <title>Cartoon Lab — Make Something Fun</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Nunito:wght@400;500;600;700;800;900;1000&display=swap"
+            rel="stylesheet"
+        />
 
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Project</title>
     </head>
-
     <body>
-        <div class="loginBox">
-            <img src="./assets/images/user.jpg" alt="" class="user" />
+        <div class="grain" aria-hidden="true"></div>
 
-            <h3>Sign in here</h3>
+        <header class="topbar">
+            <a class="brand" href="#">
+                <span class="brand-mark">✳</span>
+                <span> CARTOON<span class="brand-light">LAB</span> </span>
+            </a>
 
-            <form>
-                <div class="inputBox">
-                    <input type="text" placeholder="Username" />
-                    <span>
-                        <i class="fa fa-user"></i>
-                    </span>
+            <div class="top-note">
+                <span class="live-dot"></span> CREATIVE MODE: ON
+            </div>
+
+            <a class="top-link" href="#form">LET'S MAKE IT <span>↗</span></a>
+        </header>
+
+        <main class="layout">
+            <section class="visual-side">
+                <div class="eyebrow intro-eyebrow">
+                    <span class="eyebrow-line"></span>
+                    YOUR NEXT BIG IDEA STARTS HERE
                 </div>
 
-                <div class="inputBox">
-                    <input type="password" placeholder="Password" />
-                    <span> <i class="fa-solid fa-lock"></i> </span>
+                <div class="art-wrap">
+                    <div class="sunburst" aria-hidden="true"></div>
+
+                    <div class="float-tag tag-code" aria-hidden="true">
+                        <span class="tag-icon">&lt;/&gt;</span> GOOD IDEAS ONLY
+                    </div>
+
+                    <div class="float-tag tag-spark" aria-hidden="true">✦</div>
+
+                    <div class="float-tag tag-bubble" aria-hidden="true">
+                        LET'S GOOO! <span>↗</span>
+                    </div>
+
+                    <div class="character-card">
+                        <img
+                            class="character"
+                            src="./assets/images/cartoon-dev.png"
+                            alt="Cheerful cartoon developer"
+                        />
+
+                        <div class="image-caption">
+                            <span>FIG. #459</span><span>THE IDEA MACHINE™</span>
+                        </div>
+                    </div>
+
+                    <div class="orbit orbit-one" aria-hidden="true"></div>
+                    <div class="orbit orbit-two" aria-hidden="true"></div>
                 </div>
 
-                <input type="submit" placeholder="Login" />
-            </form>
+                <div class="visual-copy">
+                    <h1>Got a little<br /><span>chaos</span> to create?</h1>
 
-            <a href="#" class="forget">Forget password?</a>
-        </div>
+                    <p>
+                        Big ideas. Weird ideas. Ideas that probably need more
+                        glitter. We're listening.
+                    </p>
+
+                    <div class="social-proof">
+                        <div class="avatar-stack">
+                            <span>✦</span><span>☺</span><span>⚡</span>
+                        </div>
+
+                        <span><b>100% good vibes</b><br />0% boring forms</span>
+                    </div>
+                </div>
+
+                <div class="side-index">
+                    <span>CL—459</span><span>SCROLL TO CREATE ↓</span>
+                </div>
+            </section>
+
+            <section class="form-side" id="form">
+                <div class="form-heading">
+                    <div class="step-label">
+                        <span class="step-number">01</span> / THE FUN PART
+                    </div>
+
+                    <h2>
+                        Let's make<br />some <span>noise.</span
+                        ><span class="heading-star">✳</span>
+                    </h2>
+
+                    <p>
+                        Tell us what you're dreaming up. Our tiny idea goblin is
+                        ready.
+                    </p>
+                </div>
+
+                <form id="idea-form" novalidate>
+                    <div class="field">
+                        <label for="name">
+                            FIRST, WHAT DO WE CALL YOU? <span>*</span>
+                        </label>
+
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            placeholder="Your legendary name"
+                            autocomplete="name"
+                            required
+                        />
+
+                        <div class="field-note">
+                            Nickname? Secret identity? All welcome.
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">
+                            WHERE CAN WE FIND YOU? <span>*</span>
+                        </label>
+
+                        <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="you@somewhere.cool"
+                            autocomplete="email"
+                            required
+                        />
+
+                        <div class="field-note">
+                            No spam. We have better things to do.
+                        </div>
+                    </div>
+
+                    <fieldset class="field">
+                        <legend>
+                            WHAT KIND OF MAGIC ARE WE MAKING? <span>*</span>
+                        </legend>
+
+                        <div class="choice-grid">
+                            <label class="choice">
+                                <input
+                                    type="radio"
+                                    name="project"
+                                    value="Website"
+                                    required
+                                />
+
+                                <span class="choice-emoji">👔</span>
+                                <span>Website</span><i>↗</i>
+                            </label>
+
+                            <label class="choice">
+                                <input
+                                    type="radio"
+                                    name="project"
+                                    value="Animation"
+                                />
+
+                                <span class="choice-emoji">💥</span
+                                ><span>Animation</span><i>↗</i>
+                            </label>
+
+                            <label class="choice">
+                                <input
+                                    type="radio"
+                                    name="project"
+                                    value="Branding"
+                                />
+
+                                <span class="choice-emoji">🎨</span>
+                                <span>Branding</span><i>↗</i>
+                            </label>
+
+                            <label class="choice">
+                                <input
+                                    type="radio"
+                                    name="project"
+                                    value="Something weird"
+                                />
+
+                                <span class="choice-emoji">👽</span>
+                                <span>Something weird</span><i>↗</i>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="field">
+                        <label for="details">
+                            GIVE US THE LORE
+                            <span class="optional">(OPTIONAL)</span>
+                        </label>
+
+                        <textarea
+                            id="details"
+                            name="details"
+                            rows="3"
+                            placeholder="The big idea, the tiny details, the unhinged vision..."
+                        ></textarea>
+
+                        <div class="textarea-count">
+                            <span id="char-count">0</span> / 240 CHARACTERS
+                        </div>
+                    </div>
+
+                    <button class="submit-button" type="submit">
+                        <span class="button-label">
+                            SEND IT INTO THE UNIVERSE
+                        </span>
+
+                        <span class="button-icon">↗</span>
+                        <span class="button-shine"></span>
+                    </button>
+
+                    <p class="form-footnote">
+                        <span>✳</span> This form is a demo — your idea stays
+                        right here for now.
+                    </p>
+                </form>
+
+                <div
+                    class="success-panel"
+                    id="success-panel"
+                    aria-live="polite"
+                    hidden
+                >
+                    <div class="success-stamp">✦</div>
+
+                    <div class="step-label">
+                        <span class="step-number">✓</span> TRANSMISSION COMPLETE
+                    </div>
+
+                    <h3>HECK<br /><span>YES!</span></h3>
+
+                    <p id="success-copy">
+                        Your idea has officially entered the universe.
+                    </p>
+
+                    <button
+                        class="reset-button"
+                        id="reset-button"
+                        type="button"
+                    >
+                        MAKE ANOTHER ONE ↺
+                    </button>
+                </div>
+
+                <div class="form-bottom">
+                    <span>MADE WITH A LITTLE ✳ AND A LOT OF CHAOS</span>
+                    <span>© CARTOON LAB 2026</span>
+                </div>
+            </section>
+        </main>
+
+        <div class="toast" id="toast" role="status"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 
         <script src="./assets/js/main.js"></script>
     </body>
